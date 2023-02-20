@@ -129,6 +129,19 @@ img {
   padding: 24px 0;
   border-bottom: 1px solid var(--color-light-bgr);
 }
+
+@media screen and (min-width: 768px) {
+ .header {
+  padding-bottom: 10px;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .header {
+  padding-bottom: 24px;
+ }
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -162,6 +175,7 @@ img {
   display: flex;
   margin-right: auto;
 }
+
 .header-navlink {
  position: relative;
  padding-top: 24px;
@@ -186,10 +200,20 @@ img {
  background: var(--color-btnhover-bgr);
 }
 .adress-link {
- padding-top: 24px;
- padding-bottom: 28px;
+ display: block;
  color: var(--color-basik-txt);
  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+ .adress-link {
+  display: inline;
+  padding-top: 24px;
+  padding-bottom: 28px;
+ }
+}
+.adress-link.mail {
+ margin-bottom: 4px;
 }
 
 .header-navlink:hover,
